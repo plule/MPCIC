@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPCIC", "MPCIC\MPCIC.csproj", "{6AB12571-7265-4010-A048-5D7E5BAD9597}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AB12571-7265-4010-A048-5D7E5BAD9597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB12571-7265-4010-A048-5D7E5BAD9597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB12571-7265-4010-A048-5D7E5BAD9597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB12571-7265-4010-A048-5D7E5BAD9597}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A7D5BEB-D957-44E9-B616-A93C14926D25}
+	EndGlobalSection
+EndGlobal
