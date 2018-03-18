@@ -2,7 +2,7 @@
 using Avalonia;
 using Avalonia.Logging.Serilog;
 
-namespace MPCIC
+namespace MPCIC.Gui
 {
     class Program
     {

@@ -1,0 +1,11 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:MPCIC="clr-namespace:MPCIC.Gui;assembly=MPCIC.Gui">
+  <StackPanel Orientation="Horizontal" Gap="20">
+    <TextBlock Name="fileName" Text="{Binding FileName}"/>
+    <Separator />
+    <TextBlock Width="25" Name="lowNote" Text="{Binding LowNote}"/>
+    <TextBlock Width="25" Name="rootNote" Text="{Binding RootNote}" FontWeight="Bold"/>
+    <TextBlock Width="25" Name="highNote" Text="{Binding HighNote}"/>
+  </StackPanel>
+</UserControl>

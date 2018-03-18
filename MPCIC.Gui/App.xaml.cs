@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Markup.Xaml;
 
-namespace MPCIC
+namespace MPCIC.Gui
 {
     public class App : Application
     {

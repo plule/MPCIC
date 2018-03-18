@@ -1,0 +1,13 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MPCIC="clr-namespace:MPCIC.Gui;assembly=MPCIC.Gui"
+        Title="MPCIC Instrument Creator"
+        SizeToContent="WidthAndHeight"
+        MinWidth="300"
+        MinHeight="500">
+  <StackPanel Orientation="Vertical" Gap="4">
+    <Button Name="chooseSamples" Content="Choose Samples..."/>
+    <MPCIC:SampleCollectionControl Name="sampleCollection"/>
+    <Button Name="doIt" Content="Do It"/>
+  </StackPanel>
+</Window>
