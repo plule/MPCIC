@@ -3,8 +3,8 @@
         xmlns:MPCIC="clr-namespace:MPCIC.Gui;assembly=MPCIC.Gui"
         Title="MPCIC Instrument Creator"
         SizeToContent="WidthAndHeight"
-        MinWidth="300"
-        MinHeight="500">
+        MinWidth="600"
+        MinHeight="600">
   <StackPanel Orientation="Vertical" Gap="4">
     <Button Name="chooseSamples" Content="Choose Samples..."/>
     <MPCIC:SampleCollectionControl Name="sampleCollection"/>
