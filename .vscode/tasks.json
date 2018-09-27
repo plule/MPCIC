@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MPCIC.Gui/MPCIC.Gui.csproj"
+                "${workspaceFolder}/MPCIC.Cli/MPCIC.Cli.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

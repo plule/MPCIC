@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/MPCIC.Gui/bin/Debug/netcoreapp2.0/MPCIC.Gui.dll",
+            "program": "${workspaceFolder}/MPCIC.Cli/bin/Debug/netcoreapp2.0/MPCIC.Cli.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/MPCIC.Gui",
+            "cwd": "${workspaceFolder}/MPCIC.Cli",
             // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
             "console": "internalConsole",
             "stopAtEntry": false,
