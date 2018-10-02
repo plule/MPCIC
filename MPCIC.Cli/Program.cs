@@ -12,7 +12,7 @@ namespace MPCIC.Cli
                 SampleCollection collection = SampleCollection.FromFilesInDirectory(args);
                 foreach(Sample sample in collection.Samples)
                 {
-                    Console.WriteLine(string.Format("{0}:\t{1} / {2} / {3}", sample.FileName, sample.LowNote, sample.RootNote, sample.HighNote));
+                    Console.WriteLine(string.Format("{0}:\t{1}\t{2}\t{3}", sample.FileName, sample.LowNote, sample.RootNote, sample.HighNote));
                 }
 
                 collection.DoIt();
@@ -22,6 +22,7 @@ namespace MPCIC.Cli
                 Console.WriteLine(e.Message);
             }
             
+            Console.WriteLine("Press any key.");
             Console.Read();
         }
     }

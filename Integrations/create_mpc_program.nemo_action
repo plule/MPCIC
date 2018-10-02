@@ -1,0 +1,14 @@
+[Nemo Action]
+
+Active=true
+Name=Make a MPC program
+Comment=Make MPC instrument program from audio samples.
+Exec=<MPCIC/MPCIC.Cli %F>
+Icon-Name=audio
+Selection=m
+Extensions=wav;mp3;
+Dependencies=dotnet;
+EscapeSpaces=true
+Terminal=true
+
+Name[fr]=Faire un programme MPC.
