@@ -13,10 +13,21 @@ namespace MPCIC.Tests.Core
     {
         [Test]
         [TestCaseSource(typeof(TestLibrary), "Collections")]
-        public static void TestLibrariesAreCorrectlyGuessed(TestLibrary library)
+        public static void TestLibrariesAreCorrectlyGuessedFromFiles(TestLibrary library)
         {
             SampleCollection reference = library.Collection;
             SampleCollection collection = SampleCollection.FromFilesInDirectory(library.FilePaths);
+
+            Assert.That(collection.Name, Is.EqualTo(reference.Name));
+            Assert.That(collection.Samples, Is.EquivalentTo(reference.Samples));
+        }
+
+        [Test]
+        [TestCaseSource(typeof(TestLibrary), "Collections")]
+        public static void TestLibrariesAreCorrectlyGuessedFromDirectory(TestLibrary library)
+        {
+            SampleCollection reference = library.Collection;
+            SampleCollection collection = SampleCollection.FromDirectory(library.DirectoryPath);
 
             Assert.That(collection.Name, Is.EqualTo(reference.Name));
             Assert.That(collection.Samples, Is.EquivalentTo(reference.Samples));

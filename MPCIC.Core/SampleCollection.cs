@@ -196,5 +196,10 @@ namespace MPCIC.Core
 
             return new SampleCollection(samples);
         }
+
+        public static SampleCollection FromDirectory(string directory)
+        {
+            return FromFilesInDirectory(Directory.EnumerateFiles(directory));
+        }
     }
 }

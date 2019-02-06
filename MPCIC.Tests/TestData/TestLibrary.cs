@@ -11,11 +11,14 @@ namespace MPCIC.Tests.TestData
     {
         public List<string> FilePaths;
 
+        public string DirectoryPath;
+
         public SampleCollection Collection;
 
         public TestLibrary(string directory, IEnumerable<string> fileNames, SampleCollection collection)
         {
-            FilePaths = fileNames.Select(fileName => Path.Combine(RootDirectory, directory, fileName)).ToList();
+            DirectoryPath = Path.Combine(RootDirectory, directory);
+            FilePaths = fileNames.Select(fileName => Path.Combine(DirectoryPath, fileName)).ToList();
 
             if(FilePaths.Count != collection.Samples.Count)
                 throw new ArgumentException("Bad TestLibrary: not the same number of files and samples.");
