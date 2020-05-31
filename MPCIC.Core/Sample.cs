@@ -179,7 +179,7 @@ namespace MPCIC.Core
             if(fileName.Length < suffixLength)
                 return null;
 
-            if(!fileName.EndsWith(".wav", true, null))
+            if(!(Path.GetExtension(fileName).ToLower() == ".wav"))
                 return null;
 
             sample.FilePath = filePath;
