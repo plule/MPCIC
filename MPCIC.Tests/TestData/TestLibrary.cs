@@ -76,7 +76,7 @@ namespace MPCIC.Tests.TestData
         {
             get
             {
-                return new TestLibrary("Synth", new string[]{"A1.wav", "A2.wav", "A3.wav", "A4.wav", "A5.wav", "A6.wav"}, new SampleCollection
+                return new TestLibrary("Synth", new string[]{"A1.WAV", "A2.WAV", "A3.WAV", "A4.WAV", "A5.WAV", "A6.WAV"}, new SampleCollection
                 {
                     Name = "Synth",
                     Samples = new List<Sample>
