@@ -199,7 +199,10 @@ namespace MPCIC.Core
 
         public static SampleCollection FromDirectory(string directory)
         {
-            return FromFilesInDirectory(Directory.EnumerateFiles(directory));
+            return FromFilesInDirectory(
+                Directory.EnumerateFiles(directory).Where(p => Path.GetExtension(p).ToLower() == ".wav")
+
+            );
         }
     }
 }
