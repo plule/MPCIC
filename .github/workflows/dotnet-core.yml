@@ -2,7 +2,7 @@ name: .NET Core
 
 on:
   push:
-    branches: [ null_investig ]
+    branches: [ master ]
   pull_request:
     branches: [ master ]
 
