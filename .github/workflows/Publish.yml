@@ -44,7 +44,7 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 5.0.3
+          dotnet-version: 5.0
       - name: Build
         run: dotnet publish --configuration Release --runtime ${{ matrix.runtime }}
       - name: Zip
