@@ -44,11 +44,11 @@ jobs:
       - name: Setup .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 2.1.806
+          dotnet-version: 5.0.3
       - name: Build
         run: dotnet publish --configuration Release --runtime ${{ matrix.runtime }}
       - name: Zip
-        run: mv MPCIC.Cli/bin/Release/netcoreapp2.1/${{ matrix.runtime }}/publish/ ${{ matrix.folder_name }} && zip ${{ matrix.zip_name }} ${{ matrix.folder_name }}/*
+        run: mv MPCIC.Cli/bin/Release/net5.0/${{ matrix.runtime }}/publish/ ${{ matrix.folder_name }} && zip ${{ matrix.zip_name }} ${{ matrix.folder_name }}/*
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
