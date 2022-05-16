@@ -3,6 +3,12 @@
 ![Test](https://github.com/plule/MPCIC/workflows/Test/badge.svg)
 ![Publish](https://github.com/plule/MPCIC/workflows/Publish/badge.svg)
 
+# DEPRECATED
+
+I've since made [MPC Valet](https://plule.github.io/mpc_valet/) that offers the same functionality but in the browser, with a GUI.
+
+## Introduction
+
 MPCIC is a basic command line software generating MPC keygroup instruments.
 
 It takes as an input a list of .wav files named after their root note, and create an xpm file that can be loaded in the modern MPCs.
